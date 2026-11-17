@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent Factory — Nova Consulting Group</title>
+  <meta name="description" content="Agent Factory turns GitHub issues into reviewed pull requests. A hosted software factory from Nova Consulting Group.">
+  <style>
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6;color:#333}
+    main,footer{max-width:60rem;margin:0 auto;padding:0 1.25rem}
+    header.hero{background:#1f4fd6;color:#fff;padding:3rem 1.25rem;text-align:center}
+    header.hero p.eyebrow{margin:0;font-size:0.875rem;font-weight:600;text-transform:uppercase;opacity:0.9}
+    h1{font-size:clamp(2rem,6vw,3.5rem);margin:0.5rem 0;font-weight:700}
+    p.lead{font-size:clamp(1rem,2vw,1.25rem);margin:1rem 0}
+    h2{font-size:clamp(1.5rem,4vw,2.5rem);margin:2rem 0 1rem}
+    p{overflow-wrap:anywhere}
+    .cta{display:inline-block;padding:0.875rem 1.5rem;min-height:44px;border-radius:0.5rem;background:#1f4fd6;color:#fff;font-weight:600;text-decoration:none}
+    .cta:hover{opacity:0.9}
+    .cta:focus-visible{outline:3px solid #333;outline-offset:2px}
+    header.hero .cta{background:#fff;color:#1f4fd6}
+    header.hero .cta:focus-visible{outline-color:#fff}
+    section{margin:2rem 0}
+    ol,ul{padding-left:1.5rem}
+    li{margin-bottom:0.5rem}
+    footer{padding:2rem 1.25rem;text-align:center;background:#f5f5f5;margin-top:3rem}
+    footer h2{margin-top:0}
+  </style>
+</head>
+<body>
+  <header class="hero" id="top">
+    <p class="eyebrow">Nova Consulting Group</p>
+    <h1>Agent Factory</h1>
+    <p class="lead">Turns GitHub issues into reviewed pull requests.</p>
+    <a class="cta" id="cta-top" href="mailto:cto@novanet.no">Get in touch</a>
+  </header>
+  <main>
+    <section id="description" aria-labelledby="description-title">
+      <h2 id="description-title">What is Agent Factory?</h2>
+      <p>Agent Factory is a hosted software factory from Nova Consulting Group that turns GitHub issues into reviewed pull requests. It automates the full development pipeline, from issue intake through human review, so your team can focus on decisions, not execution.</p>
+    </section>
+    <section id="how-it-works" aria-labelledby="how-it-works-title">
+      <h2 id="how-it-works-title">How it works</h2>
+      <ol>
+        <li>Intake: a GitHub issue with acceptance criteria</li>
+        <li>Plan: analyse the repository and write an implementation plan</li>
+        <li>Implement: make the smallest complete change</li>
+        <li>Test: add or update tests and run build and test</li>
+        <li>Review: an automated critical review of the diff</li>
+        <li>Pull request: open a PR linked to the issue</li>
+        <li>Human review and merge: your team reviews and merges</li>
+      </ol>
+    </section>
+    <section id="what-makes-it-ours" aria-labelledby="what-makes-it-ours-title">
+      <h2 id="what-makes-it-ours-title">What makes it ours</h2>
+      <ul>
+        <li><strong>Versioned factory policy:</strong> the rules the factory follows are versioned</li>
+        <li><strong>Project profile:</strong> per-project configuration of build, test and conventions</li>
+        <li><strong>Oslo Live benchmark:</strong> the factory is measured against the Oslo Live benchmark</li>
+      </ul>
+    </section>
+    <section id="what-you-see" aria-labelledby="what-you-see-title">
+      <h2 id="what-you-see-title">What you see</h2>
+      <ul>
+        <li><strong>Control UI:</strong> follow runs and their status</li>
+        <li><strong>Cost per merged PR:</strong> a transparent cost metric</li>
+      </ul>
+    </section>
+    <section id="where-it-runs" aria-labelledby="where-it-runs-title">
+      <h2 id="where-it-runs-title">Where it runs</h2>
+      <p>Each customer gets an isolated instance. The MVP runs in Nova's Azure tenant. Customer-hosted deployment comes later.</p>
+    </section>
+    <section id="mvp-timeline" aria-labelledby="mvp-timeline-title">
+      <h2 id="mvp-timeline-title">MVP and timeline</h2>
+      <p>The MVP takes <strong>7 weeks</strong>. The pilot is evaluated against agreed success criteria, such as merged PRs and cost per merged PR.</p>
+      <p>Chat-based intake, Azure DevOps support and customer-hosted deployment are planned for later.</p>
+    </section>
+  </main>
+  <footer>
+    <h2>Interested?</h2>
+    <a class="cta" id="cta-bottom" href="mailto:cto@novanet.no">Get in touch</a>
+    <p>© Nova Consulting Group</p>
+  </footer>
+</body>
+</html>

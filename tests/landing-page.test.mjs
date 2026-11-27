@@ -85,6 +85,12 @@ describe('Agent Factory landing page', () => {
     assert.doesNotMatch(html, /100vw/);
   });
 
+  test('has a main menu linking to Om Nova Consulting Group', () => {
+    const navMatch = html.match(/<nav[^>]*>[\s\S]*?<\/nav>/);
+    assert.ok(navMatch, 'main menu found');
+    assert.match(navMatch[0], /<a[^>]*href="om-nova-consulting-group\.html"[^>]*>Om Nova Consulting Group<\/a>/);
+  });
+
   test('has no tracking or external resources', () => {
     assert.doesNotMatch(html, /https?:\/\/[^\s"'>]+/);
     assert.doesNotMatch(html, /google-analytics/i);
